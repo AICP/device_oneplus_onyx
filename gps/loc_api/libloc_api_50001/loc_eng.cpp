@@ -500,7 +500,7 @@ struct LocEngSuplMode : public LocMsg {
         locallog();
     }
     inline virtual void proc() const {
-        mAdapter->getUlpProxy()->setCapabilities(ContextBase::getCarrierCapabilities());
+        mAdapter->getUlpProxy()->setCapabilities(getCarrierCapabilities());
     }
     inline  void locallog() const {
     }
